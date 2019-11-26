@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Flex Layout</title>
+        <style type="text/css">
+            
+            /* CSS RESET */
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            .flex-row{
+                flex-direction: row;
+            }
+            
+            .flex-col{
+                flex-direction: column;
+            }
+            
+            .flex-row-rev{
+                flex-direction: row-reverse;
+            }
+            
+            .flex-col-rev{
+                flex-direction: column-reverse;
+            }
+            
+            .flex-rap{
+                flex-wrap: wrap;
+            }
+            .flex-rap-rev{
+                flex-wrap: wrap-reverse;
+            }
+            
+            .container{
+                display: flex;
+                /* Flex Direction row | column | row-reverse | column-reverse  */
+                background-color: #444;
+                padding: 10px 0px;
+                
+                text-align: center;
+                
+                margin-bottom: 20px;
+            }
+            
+            .pad{
+                padding: 5px 10px;
+                background-color: #555;
+                margin: 5px 10px;
+            }
+            .pad:hover{
+                background: #222;
+            }
+            
+            .text-white{
+                color: #eee;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+    
+        <div class="container flex-row"> 
+            <div class="pad text-white">F</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">X</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">R</div>
+            <div class="pad text-white">O</div>
+            <div class="pad text-white">W</div>
+        </div>
+        
+        <div class="container flex-row-rev"> 
+            <div class="pad text-white">F</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">X</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">R</div>
+            <div class="pad text-white">O</div>
+            <div class="pad text-white">W</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">R</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">V</div>
+            
+        </div>
+
+        <div class="container flex-col"> 
+            <div class="pad text-white">F</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">X</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">C</div>
+            <div class="pad text-white">O</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">U</div>
+            <div class="pad text-white">M</div>
+            <div class="pad text-white">N</div>
+        </div>
+
+        <div class="container flex-col-rev"> 
+            <div class="pad text-white">F</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">X</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">C</div>
+            <div class="pad text-white">O</div>
+            <div class="pad text-white">L</div>
+            <div class="pad text-white">U</div>
+            <div class="pad text-white">M</div>
+            <div class="pad text-white">N</div>
+            <div class="pad text-white">-</div>
+            <div class="pad text-white">R</div>
+            <div class="pad text-white">E</div>
+            <div class="pad text-white">V</div>
+        </div>
+
+        <div class="container flex-row flex-rap"> 
+            <div class="pad text-white">1</div>
+            <div class="pad text-white">2</div>
+            <div class="pad text-white">3</div>
+            <div class="pad text-white">4</div>
+            <div class="pad text-white">5</div>
+            <div class="pad text-white">6</div>
+            <div class="pad text-white">7</div>
+            <div class="pad text-white">8</div>
+            <div class="pad text-white">1</div>
+            <div class="pad text-white">2</div>
+            <div class="pad text-white">3</div>
+            <div class="pad text-white">4</div>
+            <div class="pad text-white">5</div>
+            <div class="pad text-white">6</div>
+            <div class="pad text-white">7</div>
+            <div class="pad text-white">8</div>            
+            <div class="pad text-white">1</div>
+            <div class="pad text-white">2</div>
+            <div class="pad text-white">3</div>
+            <div class="pad text-white">4</div>
+            <div class="pad text-white">5</div>
+            <div class="pad text-white">6</div>
+            <div class="pad text-white">7</div>
+            <div class="pad text-white">8</div>            
+            <div class="pad text-white">1</div>
+            <div class="pad text-white">2</div>
+            <div class="pad text-white">3</div>
+            <div class="pad text-white">4</div>
+            <div class="pad text-white">5</div>
+            <div class="pad text-white">6</div>
+            <div class="pad text-white">7</div>
+            <div class="pad text-white">8</div>
+        </div>        
+        
+    </body>
+</html>
